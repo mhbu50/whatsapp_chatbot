@@ -14,7 +14,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/whatsapp_chatbot/css/whatsapp_chatbot.css"
-# app_include_js = "/assets/whatsapp_chatbot/js/whatsapp_chatbot.js"
+app_include_js = "whatsapp_chatbot.bundle.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/whatsapp_chatbot/css/whatsapp_chatbot.css"
@@ -98,13 +98,14 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"*": {
+		"on_update": "whatsapp_chatbot.whatsapp_chatbot.tools.send_whatsapp",
+        "on_update_after_submit": [
+			"whatsapp_chatbot.whatsapp_chatbot.tools.send_whatsapp"
+		]
+	}
+}
 
 # Scheduled Tasks
 # ---------------

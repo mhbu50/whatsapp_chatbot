@@ -1,0 +1,9 @@
+{
+    "js/whatsapp_chatbot.js": [
+      "public/js/qr_code.js",
+      "public/js/conf.js"
+    ],
+    "css/whatsapp_chatbot.css": [
+ 
+    ]
+  }
