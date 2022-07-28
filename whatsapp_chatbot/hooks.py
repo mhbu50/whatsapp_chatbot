@@ -128,11 +128,6 @@ doc_events = {
 # 	],
 # }
 
-# Testing
-# -------
-
-# before_tests = "whatsapp_chatbot.install.before_tests"
-
 # Overriding Methods
 # ------------------------------
 #
