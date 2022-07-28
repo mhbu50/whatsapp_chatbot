@@ -8,6 +8,7 @@
   "host_url",
   "secret_key",
   "genrate",
+  "disconnect",
   "session",
   "token",
   "column_break_5",
@@ -50,12 +51,17 @@
    "in_list_view": 1,
    "label": "Host URL",
    "reqd": 1
+  },
+  {
+   "fieldname": "disconnect",
+   "fieldtype": "Button",
+   "label": "Disconnect"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-07-02 15:41:47.613937",
+ "modified": "2022-07-27 23:34:50.397425",
  "modified_by": "Administrator",
  "module": "Whatsapp Chatbot",
  "name": "Chatbot Settings",

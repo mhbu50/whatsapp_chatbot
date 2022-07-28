@@ -14,5 +14,7 @@ frappe.ui.form.on('Chatbot Settings', {
 			qr.make();
 			document.getElementById('qr').innerHTML = qr.createImgTag();
 		});
+	},disconnect:function(frm){
+		frm.call("disconnect");
 	}
 });

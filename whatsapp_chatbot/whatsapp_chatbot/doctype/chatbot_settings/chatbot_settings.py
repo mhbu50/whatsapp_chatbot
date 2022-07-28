@@ -15,12 +15,12 @@ class ChatbotSettings(Document):
         headers = {"Content-Type": "application/json",
                    "Accept": "application/json"}
 
-        # res = make_post_request(url="http://localhost:21465/api/"+self.session + "/start-session",  headers=headers)
-        # print("111= {}".format(frappe.as_json(res)))
-        # res = make_post_request(url="http://localhost:21465/api/"+self.session + "/start-session",  headers=headers)
-        # self.save()
-
         res = make_get_request(url=self.host_url+"/qr")
         self.token = res
         self.save()
+
+    @frappe.whitelist()
+    def disconnect(self):
+        make_get_request(url=self.host_url+"/disconnect")
+
 
